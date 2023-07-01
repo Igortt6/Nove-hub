@@ -1,0 +1,71 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-instagram:before {
+	content: "\e900";
+	color: #e4405f;
+}
+
+._icon-viber:before {
+	content: "\e901";
+	color: #665cac;
+}
+
+._icon-condi:before {
+	content: "\e903";
+}
+
+._icon-weight:before {
+	content: "\e905";
+}
+
+._icon-support:before {
+	content: "\e90d";
+}
+
+._icon-kid:before {
+	content: "\e910";
+}
+
+._icon-dors:before {
+	content: "\e915";
+}
+
+._icon-arrow-right:before {
+	content: "\e919";
+}
+
+._icon-gasoline:before {
+	content: "\e91c";
+}
+
+._icon-insurance:before {
+	content: "\e91e";
+}
+
+._icon-choice:before {
+	content: "\e927";
+}
+
+._icon-save:before {
+	content: "\e92d";
+}
+
+._icon-delivery:before {
+	content: "\e92e";
+}

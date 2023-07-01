@@ -1,0 +1,39 @@
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">&#10006;</button>
+
+			<form id="myForm" class="form">
+				<div class="h2 form__title">Вкажіть Ваші данні і ми Вам зателефонуему, як найшвидше</div>
+
+
+				<div class="form__item">
+					<input type="text" name="name" placeholder="Ім'я" class="form__input _required">
+
+				</div>
+
+				<div class="form__item">
+					<input type="phone" name="phone" placeholder="Телефон" class="form__input _required _phone">
+
+				</div>
+				<div class="form__item">
+					<label class="form__lable">Вкажіть дату оренди</label>
+					<input data-datepicker type="text" name="dataStart" placeholder="Вкажіть дату"
+						class="form__input-date _required data-start">
+					<input data-datepicker type="text" name="dataEnd" placeholder="Вкажіть дату"
+						class="form__input-date _required data-end">
+				</div>
+
+				<div class="form__item">
+					<textarea name="message" placeholder="Повідомлення" class="form__input"></textarea>
+
+				</div>
+
+
+
+				<button type="submit" class="form__button button button-center">Відправити</button>
+			</form>
+
+		</div>
+	</div>
+</div>
