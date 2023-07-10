@@ -16,14 +16,16 @@
 	}
 }
 
-._icon-instagram:before {
+._icon-telegram:before {
 	content: "\e900";
-	color: #e4405f;
 }
 
-._icon-viber:before {
+._icon-whatsapp:before {
 	content: "\e901";
-	color: #665cac;
+}
+
+._icon-tiktok:before {
+	content: "\e902";
 }
 
 ._icon-condi:before {
@@ -42,8 +44,16 @@
 	content: "\e910";
 }
 
+._icon-facebook:before {
+	content: "\e914";
+}
+
 ._icon-dors:before {
 	content: "\e915";
+}
+
+._icon-instagram:before {
+	content: "\e918";
 }
 
 ._icon-arrow-right:before {
@@ -56,6 +66,10 @@
 
 ._icon-insurance:before {
 	content: "\e91e";
+}
+
+._icon-phone:before {
+	content: "\e921";
 }
 
 ._icon-choice:before {

@@ -1,181 +1,304 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «COSTA WHEELS»</title>
-</head>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Прокат авто, машина в аренду | Nove hub"
+})
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «COSTA WHEELS»</h1>
-		<div class="rootpage__info">
-			Сайт з оренди атомобілів
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-			<li><a target="_blank" href="car.html">Картка авто</a></li>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section data-prlx-parent class="page__main-block main-block">
+				<div data-prlx class="main-block__container">
+					<div class="main-block__body">
+						<div class="main-block__lable">Лидеры в аренде автомобилей Аликанте</div>
+						<h1 class="main-block__title">Добро пожаловать в наш автомобильный прокат!</h1>
+						<div class="main-block__text">Ищете комфортную и удобную альтернативу владению автомобилем?
+							Тогда вы нашли подходящий сайт! Мы – ведущий поставщик аренды автомобилей, что
+							предлагает широкий выбор транспортных средств по доступным ценам.
+						</div>
+						<a href="#" data-goto=".page__main-catalog" class="main-block__button button"><span>Посмотреть
+								автопарк</span></a>
+					</div>
+				</div>
+			</section>
+			<section class="page__main-catalog catalog-main">
+				<div class="catalog-main__container">
+					<h2 class="catalog-main__title title-h2">Наш автопарк</h2>
+					<div data-tabs class="catalog-main__tabs tabs-main-catalog">
+						<nav data-tabs-titles class="tabs-main-catalog__navigation">
+							<button type="button" class="tabs-main-catalog__title button _tab-active">Економ</button>
+							<button type="button" class="tabs-main-catalog__title button">Комфорт</button>
+						</nav>
+						<div data-tabs-body class="tabs-main-catalog__content">
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="Toyota-prius-2010.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Toyota-Prius/main.png" alt="авто">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h4">Opel corsa 2016</h4>
+											<div class="product-card__price text-12">от 10Є / сутки</div>
+											<a href="#"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="#" class="product-card__image-ibg_contain">
 
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="car.html#popup"> Форма замовлення</a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
-		</div>
+											<img src="@img/catalog/Toyota-Prius/main.png" alt="авто">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h4">Ford fiesta 2017</h4>
+											<div class="product-card__price text-12">от 15Є / сутки</div>
+											<a href="#"
+												class=" button button_product product-card__button">Просмотреть</a>
+										</div>
+									</article>
+
+								</div>
+							</div>
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="#" class="product-card__image-ibg_contain">
+
+											<img src="@img/catalog/Opel-Corsa-2016.png" alt="авто">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h4">Ford fiesta 2017</h4>
+											<div class="product-card__price text-12">від 10Є / доба</div>
+											<a href="#"
+												class=" button button_product product-card__button">Переглянути</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="#" class="product-card__image-ibg_contain">
+
+											<img src="@img/catalog/Opel-Corsa-2016.png" alt="авто">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h4">Ford fiesta 2017</h4>
+											<div class="product-card__price text-12">від 10Є / доба</div>
+											<a href="#"
+												class=" button button_product product-card__button">Переглянути</a>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="page__advantages advantages-block">
+				<div class="advantages-block__container">
+					<div class="advantages-block__wraper">
+						<h2 class="advantages-block__title title-h2">Вы получаете:</h2>
+						<div class="advantages-block__items">
+							<article data-watch class="advantages-block__item item-advantages _animated">
+								<div class="item-advantages__icon _icon-insurance">
+									<h4 class="item-advantages__title title-h4">Страховка</h4>
+									<div class="item-advantages__text text-12">
+										<p>Путешествуйте спокойно и безопасно – мы берем все риски на себя, ведь весь
+											парк авто, который мы предлагаем, полностью застрахован.</p>
+									</div>
+							</article>
+							<article data-watch class="advantages-block__item item-advantages _animated">
+								<div class="item-advantages__icon _icon-delivery">
+									<h4 class="item-advantages__title title-h4">Доставка</h4>
+									<div class="item-advantages__text text-12">
+										<p>Выберите автомобыль, и мы доставим Вам авто в удобную для вас точку Аликанте,
+											в оговоренное время, удобное для Вас</p>
+									</div>
+							</article>
+							<!-- <article data-watch class="advantages-block__item item-advantages _animated">
+								<div class="item-advantages__icon _icon-choice">
+									<h4 class="item-advantages__title title-h4">Вибір</h4>
+									<div class="item-advantages__text text-12">
+										<p>Вас ожидает широкий выбор авто, для лубой цели. Наши менеджеры помогут Вам с
+											выбором</p>
+									</div>
+							</article>
+							<article data-watch class="advantages-block__item item-advantages _animated">
+								<div class="item-advantages__icon _icon-save">
+									<h4 class="item-advantages__title title-h4">Безпека</h4>
+									<div class="item-advantages__text text-12">
+										<p>В прокате только безопасные авто, с полным комплектом </p>
+									</div>
+							</article> -->
+							<article data-watch class="advantages-block__item item-advantages _animated">
+								<div class="item-advantages__icon _icon-support">
+									<h4 class="item-advantages__title title-h4">Поддержка</h4>
+									<div class="item-advantages__text text-12">
+										<p>Постоянная поддержка по любым вопросам, будь то бронирование отелей или поиск
+											лучших туров и товаров.</p>
+									</div>
+							</article>
+							<article data-watch class="advantages-block__item item-advantages _animated">
+								<div class="item-advantages__icon _icon-kid">
+									<h4 class="item-advantages__title title-h4">Детское кресло</h4>
+									<div class="item-advantages__text text-12">
+										<p>Путешествуете с детьми? Защитите своих детей с помощью детского комфортного
+											кресла.</p>
+									</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__conditions conditions-block">
+				<div class="conditions-block__container">
+					<div class="conditions-block__wraper">
+						<h2 class="conditions-block__title title-h2">Как арендуварь автомобиль</h2>
+						<div class="conditions-block__body">
+							<div class="conditions-block__items">
+								<article data-watch class="conditions-block__item item-conditions _animated">
+									<div class="item-conditions__image-ibg_contain">
+										<img src="@img/conditions/auto-2.png" alt="авто">
+									</div>
+									<h4 class="item-conditions__title title-h4">Выберите авто</h4>
+									<div class="item-conditions__text text-12">
+										<p>Выберите автомобиль, который вам наиболее подходит по характеристикам и цене
+										</p>
+									</div>
+								</article>
+								<article data-watch class="conditions-block__item item-conditions _animated">
+									<div class="item-conditions__image-ibg_contain">
+										<img src="@img/conditions/calendar.png" alt="">
+									</div>
+									<h4 class="item-conditions__title title-h4">Выберите дату</h4>
+									<div class="item-conditions__text text-12">
+										<p>При заказе авто, укажите подходящую дату, наши менеджеры проверят
+											достоупность авто сами</p>
+									</div>
+								</article>
+								<article data-watch class="conditions-block__item item-conditions _animated">
+									<div class="item-conditions__image-ibg_contain">
+										<img src="@img/conditions/passport.png" alt="">
+									</div>
+									<h4 class="item-conditions__title title-h4">Документы</h4>
+									<div class="item-conditions__text text-12">
+										<p>Приготовьте документы, они понадобятся на этапе оформления авто с менеджером
+										</p>
+									</div>
+								</article>
+								<article data-watch class="conditions-block__item item-conditions _animated">
+									<div class="item-conditions__image-ibg_contain">
+										<img src="@img/conditions/keys.png" alt="">
+									</div>
+									<h4 class="item-conditions__title title-h4">Получите ключи</h4>
+									<div class="item-conditions__text text-12">
+										<p> Заберите ключи и наслождайтесь поездкой ко солнечной Испании</p>
+									</div>
+								</article>
+							</div>
+							<a href="#" class="conditions-block__button button _icon-arrow-right">
+								<span>Подробнее</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section data-watch class="page__reviews reviews-block _animated">
+				<div class="reviews-block__container">
+					<h2 class="reviews-block__title title-h2">Отзывы про нашу компанию</h2>
+					<div class="reviews-block__slider swiper">
+						<div class="reviews-block__wrapper swiper-wrapper">
+							<div class="reviews-block__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__wraper">
+									<div class="slide-reviews__image">
+										<img src="@img/callback/1.png" alt="">
+									</div>
+									<div class="slide-reviews__text text-12">
+										Я арендовал автомобиль в Аликанте, и это было прекрасное и беззаботное
+										путешествие. Автомобиль был в отличном состоянии, и услуга, предоставленная
+										арендной компанией, была выдающейся. Я наслаждался каждой минутой своего
+										путешествия, и автомобиль позволил мне исследовать красоту Испании в полной
+										мере. Определенно рекомендую аренду автомобиля в Аликанте!
+									</div>
+								</div>
+							</div>
+							<div class="reviews-block__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__wraper">
+									<div class="slide-reviews__image">
+										<img src="@img/callback/2.png" alt="">
+									</div>
+									<div class="slide-reviews__text text-12">
+										Я очень доволен своим опытом аренды автомобиля в Аликанте. Процесс бронирования
+										был простым, а условия аренды были ясными и понятными. Автомобиль был чистым и в
+										отличном состоянии. Я мог свободно перемещаться по городу и его окрестностям,
+										посещая различные достопримечательности. Я рекомендую аренду автомобиля
+									</div>
+								</div>
+							</div>
+							<div class="reviews-block__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__wraper">
+									<div class="slide-reviews__image">
+										<img src="@img/callback/1.png" alt="">
+									</div>
+									<div class="slide-reviews__text text-12">
+										Опыт аренды автомобиля в Аликанте был великолепным. Процесс получения и возврата
+										автомобиля был быстрым и эффективным. Автомобиль был чистым и хорошо
+										обслуженным. Я был впечатлен профессионализмом сотрудников арендной компании,
+										которые были очень дружелюбны и готовы помочь. Я провел замечательное время,
+										путешествуя по Испании на автомобиле, и рекомендую всем аренду автомобиля в
+										Аликанте.
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Якщо потрібна пагінація -->
+						<div class="reviews-block__pagination"></div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<button type="button" class="reviews-block__button-prev"></button>
+						<button type="button" class="reviews-block__button-next"></button>
+
+					</div>
+			</section>
+			<section class="page__contacts contacts-block">
+				<div class="contacts-block__container">
+					<div class="contacts-block__wrapper">
+						<h2 class="contacts-block__title title-h2">Как нас найти</h2>
+						<div class="contacts-block__body">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d100115.79078283232!2d-0.5549236!3d38.357812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2z0JDQu9GW0LrQsNC90YLQtSwg0IbRgdC_0LDQvdGW0Y8!5e0!3m2!1suk!2sua!4v1688463085758!5m2!1suk!2sua"
+								style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+
+							<div class="contacts-block__content">
+								<h4 class="contacts-block__subtitle title-h4">Юридический адресс</h4>
+								<div class="contacts-block__text text">ООО «ИРВАС», 127411, г.Москва, Дмитровское шоссе,
+									д.125, корпус 1</div>
+								<h4 class="contacts-block__subtitle title-h4">Телефон:</h4>
+								<div class="contacts-block__text text"><a href="tel:0800600800">+7 (495) 646-61-71
+										(многоканальный)</a></div>
+								<h4 class="contacts-block__subtitle title-h4">E-mail:</h4>
+								<div class="contacts-block__text text"><a href="E-mail">info@irvasokna.ru</a></div>
+								<h4 class="contacts-block__subtitle title-h4">Соціальі мережі</h4>
+								<div class="contacts-block__text text">
+									<a href="#"><span class="_icon-instagram"></span></a>
+									<a href="#"><span class="_icon-facebook"></span></a>
+									<a href="#"><span class="_icon-whatsapp"></span></a>
+									<a href="#"><span class="_icon-telegram"></span></a>
+									<a href="#"><span class="_icon-tiktok"></span></a>
+								</div>
+								<h4 class="contacts-block__subtitle title-h4">Графік роботи</h4>
+								<div class="contacts-block__text text">9:00 - 18:00 без выходных</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
 	</div>
+	@@include('html/_js.htm',{})
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #12547a;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #eae13e
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #eae13e;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #eae13e;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #eae13e;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>

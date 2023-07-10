@@ -199,14 +199,9 @@
     // .advantages-block__items
     &__items {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 0.625rem;
         padding-bottom: 0.9375rem;
-
-        @media (max-width:$tablet) {
-            grid-template-columns: repeat(3, 1fr);
-
-        }
 
         @media (max-width:$mobile) {
             grid-template-columns: repeat(2, 1fr);
@@ -455,6 +450,15 @@
         border-radius: 1.25rem;
         background-color: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(0.9375rem);
+
+        &_page {
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1.25rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(0.9375rem);
+            margin-top: rem(50);
+            padding: rem(20);
+        }
     }
 
     // .contacts-block__title
@@ -462,6 +466,10 @@
         @include adaptiveValue("margin-bottom", 60, 30);
         @include adaptiveValue("margin-top", 60, 30);
 
+        &_m0 {
+            @include adaptiveValue("padding-bottom", 60, 30);
+
+        }
     }
 
     // .contacts-block__body

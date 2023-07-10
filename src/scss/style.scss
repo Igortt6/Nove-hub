@@ -5,8 +5,7 @@
 
 // Підключення шрифтів ===========================================================================================================================================================================================================================================================================
 //&display=swap - додати при підключенні через плагін
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;1,300;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
 // Підключити, якщо є локальні файли шрифтів
 @import "fonts/fonts";
@@ -28,7 +27,7 @@ $mainColor: #fff4ea; // Колір шрифту за замовчуванням
 $mainColorReverse : #000;
 $blue: rgb(42, 73, 231);
 $orange :rgb(254, 157, 0);
-$orangeHover: rgb(255, 128, 0);
+$orangeHover: rgb(255, 130, 0);
 // Палітра кольорів
 // @import "base/colors-palette";
 
@@ -176,4 +175,5 @@ body {
 
 // Підключення стилів окремих сторінок
 @import "home";
-@import "car"
+@import "car";
+@import "details";
