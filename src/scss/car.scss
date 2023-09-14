@@ -266,6 +266,26 @@
     // .middle-block__text
     &__text {
         line-height: math.div(20, 16);
+
+        li {
+            font-size: rem(14);
+            line-height: rem(20);
+            padding-left: rem(15);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                background-color: $mainColor;
+                /* Цвет круга */
+                border-radius: 50%;
+                transform: translateY(50%);
+            }
+        }
     }
 }
 

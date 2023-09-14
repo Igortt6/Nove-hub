@@ -493,13 +493,29 @@
 
     }
 
+
     // .contacts-block__text
     &__text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         font-size: rem(20);
         font-weight: 500;
+        padding-bottom: rem(20);
 
-        &:not(:last-child) {
-            padding-bottom: rem(20);
+
+        // .contacts-block__text_social
+        &_social {
+
+            font-size: rem(26);
+            padding-bottom: rem(0);
+
+            span {
+                &::before {
+                    padding: rem(10);
+
+                }
+            }
         }
     }
 }
