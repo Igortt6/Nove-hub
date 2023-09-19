@@ -167,10 +167,6 @@
             margin-bottom: rem(7);
 
         }
-
-        @media (max-width:$tablet) {
-            justify-content: space-around;
-        }
     }
 }
 
@@ -285,6 +281,12 @@
                 border-radius: 50%;
                 transform: translateY(50%);
             }
+
+
+        }
+
+        p {
+            font-weight: 700;
         }
     }
 }
