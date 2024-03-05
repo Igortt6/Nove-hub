@@ -4,7 +4,17 @@
 "title":"Прокат авто, машина в аренду | Nove hub"
 })
 
-<body>
+<body>	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript
+		><iframe
+			src="https://www.googletagmanager.com/ns.html?id=GTM-WXXMT7VZ"
+			height="0"
+			width="0"
+			style="display: none; visibility: hidden"
+		></iframe
+	></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
@@ -27,94 +37,322 @@
 					<h2 class="catalog-main__title title-h2">Наш автопарк</h2>
 					<div data-tabs class="catalog-main__tabs tabs-main-catalog">
 						<nav data-tabs-titles class="tabs-main-catalog__navigation">
-							<button type="button" class="tabs-main-catalog__title button _tab-active">Мини</button>
-							<button type="button" class="tabs-main-catalog__title button">Комфорт</button>
-							<button type="button" class="tabs-main-catalog__title button">7-ми месные</button>
-							<button type="button" class="tabs-main-catalog__title button">Автобусы</button>
-
+							<button type="button" class="tabs-main-catalog__title button button_tabs _tab-active">Все</button>
+							<button type="button" class="tabs-main-catalog__title button button_tabs">Эконом</button>
+							<button type="button" class="tabs-main-catalog__title button button_tabs">Средний</button>
+							<button type="button" class="tabs-main-catalog__title button button_tabs">Люкс</button>
+							<button type="button" class="tabs-main-catalog__title button button_tabs">7-ми месные</button>
+							<button type="button" class="tabs-main-catalog__title button button_tabs">Каблиолеты</button>
+							<button type="button" class="tabs-main-catalog__title button button_tabs">Автобусы</button>
 						</nav>
 						<div data-tabs-body class="tabs-main-catalog__content">
 							<div class="tabs-main-catalog__body">
 								<div class="tabs-main-catalog__products">
 									<article class="product-card">
-										<a href="Toyota-prius-2010.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/Toyota-Prius/main.png" alt="авто">
-										</a>
-										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">Toyota Prius 2010</h4>
-											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
-											<a href="Toyota-prius-2010.html"
-												class="product-card__button button button_product">Просмотреть</a>
-										</div>
-									</article>
-									<article class="product-card">
-										<a href="Mini-cooper-S-2007.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/Mini-Cooper/main.png" alt="авто">
-										</a>
-										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">Mini Cooper S 2007</h4>
-											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
-											<a href="Mini-cooper-S-2007.html"
-												class="product-card__button button button_product">Просмотреть</a>
-										</div>
-									</article>
-									<article class="product-card">
 										<a href="Opel-Corsa-2006.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/Opel-Corsa-2006/main.png" alt="авто">
+											<img src="@img/catalog/Opel-Corsa-2006/main.png" alt="Opel-Corsa 2006">
 										</a>
 										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">Opel Corsa 2006</h4>
-											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
+											<h4 class="product-card__title title-h5">Opel Corsa 2006</h4>
+											<div class="product-card__price text-12">от 17 &#8364; / сутки</div>
 											<a href="Opel-Corsa-2006.html"
 												class="product-card__button button button_product">Просмотреть</a>
 										</div>
 									</article>
 									<article class="product-card">
 										<a href="Opel-Corsa-2016.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/Opel-Corsa-2016/main.png" alt="авто">
+											<img src="@img/catalog/Opel-Corsa-2016/main.png" alt="Opel-Corsa 2016">
 										</a>
 										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">Opel Corsa 2016</h4>
-											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
+											<h4 class="product-card__title title-h5">Opel Corsa 2016</h4>
+											<div class="product-card__price text-12">от 19 &#8364; / сутки</div>
 											<a href="Opel-Corsa-2016.html"
 												class="product-card__button button button_product">Просмотреть</a>
 										</div>
 									</article>
 									<article class="product-card">
 										<a href="Toyota-Yaris-2012.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/Toyota-Yaris-2012/main.png" alt="авто">
+											<img src="@img/catalog/Toyota-Yaris-2012/main.png" alt="Toyota-Yaris-2012">
 										</a>
 										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">Toyota Yaris 2012</h4>
-											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
+											<h4 class="product-card__title title-h5">Toyota Yaris 2012</h4>
+											<div class="product-card__price text-12">от 19 &#8364; / сутки</div>
 											<a href="Toyota-Yaris-2012.html"
 												class="product-card__button button button_product">Просмотреть</a>
 										</div>
 									</article>
 									<article class="product-card">
-										<a href="VW-Eos-2007.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/VW-Eos-2007/main.png" alt="авто">
+										<a href="Fiat-500.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Fiat 500/main.png" alt="Fiat-500">
 										</a>
 										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">VW Eos 2007</h4>
+											<h4 class="product-card__title title-h5">Fiat 500</h4>
+											<div class="product-card__price text-12">от 25 &#8364; / сутки</div>
+											<a href="Fiat-500.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Toyota-prius-2010.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Toyota-Prius/main.png" alt="Toyota-prius-2010">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Toyota Prius 2010</h4>
+											<div class="product-card__price text-12">от 25 &#8364; / сутки</div>
+											<a href="Toyota-prius-2010.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Skoda-Octavia.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Skoda-Octavia2.0/main.png" alt="Skoda-Octavia">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Skoda Octavia</h4>
 											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
+											<a href="Skoda-Octavia.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Mercedes-A-class.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Mercedes A class Diesel/main.png" alt="Mercedes-A-class">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Mercedes A-class</h4>
+											<div class="product-card__price text-12">от 42 &#8364; / сутки</div>
+											<a href="Mercedes-A-classe.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Peugeot-508-2019.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Peugeot-508-2019/main.png" alt="Peugeot-508-2019">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Peugeot 508 2019 </h4>
+											<div class="product-card__price text-12">от 48 &#8364; / сутки</div>
+											<a href="Peugeot-508-2019.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="VW-T-Cross.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/VW T-Cross 1.0i/main.png" alt="VW-T-Cross">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">VW-T-Cross</h4>
+											<div class="product-card__price text-12">от 48 &#8364; / сутки</div>
+											<a href="VW-T-Cross.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+
+									<article class="product-card">
+										<a href="VW-Touran-2011.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/VW-Touran/main.png" alt="VW-Touran-2011">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">VW Touran 2011</h4>
+											<div class="product-card__price text-12">от 33 &#8364; / сутки</div>
+											<a href="VW-Touran-2011.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="VW-Eos-2007.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/VW-Eos-2007/main.png" alt="VW-Eos-2007">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">VW Eos 2007</h4>
+											<div class="product-card__price text-12">от 32 &#8364; / сутки</div>
 											<a href="VW-Eos-2007.html"
 												class="product-card__button button button_product">Просмотреть</a>
 										</div>
 									</article>
 									<article class="product-card">
-										<a href="VW-Touran-.html" class="product-card__image-ibg_contain">
-											<img src="@img/catalog/VW-Touran/main.png" alt="авто">
+										<a href="Mini-cooper-S-2007.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Mini-Cooper/main.png" alt="Mini-cooper-S-2007">
 										</a>
 										<div class="product-card__content">
-											<h4 class="product-card__title title-h4">VW Touran</h4>
-											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
-											<a href="VW-Touran-.html"
+											<h4 class="product-card__title title-h5">Mini Cooper S 2007</h4>
+											<div class="product-card__price text-12">от 32 &#8364; / сутки</div>
+											<a href="Mini-cooper-S-2007.html"
 												class="product-card__button button button_product">Просмотреть</a>
 										</div>
 									</article>
 								</div>
 							</div>
+
+							<!-- Єконом -->
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="Opel-Corsa-2006.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Opel-Corsa-2006/main.png" alt="Opel-Corsa-2006">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Opel Corsa 2006</h4>
+											<div class="product-card__price text-12">от 17 &#8364; / сутки</div>
+											<a href="Opel-Corsa-2006.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Opel-Corsa-2016.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Opel-Corsa-2016/main.png" alt="Opel-Corsa-2016">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Opel Corsa 2016</h4>
+											<div class="product-card__price text-12">от 19 &#8364; / сутки</div>
+											<a href="Opel-Corsa-2016.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Fiat-500.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Fiat 500/main.png" alt="Fiat-500">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Fiat 500</h4>
+											<div class="product-card__price text-12">от 25 &#8364; / сутки</div>
+											<a href="Fiat-500.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<!-- Средний -->
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="Toyota-Yaris-2012.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Toyota-Yaris-2012/main.png" alt="Toyota-Yaris-2012">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Toyota Yaris 2012</h4>
+											<div class="product-card__price text-12">от 19 &#8364; / сутки</div>
+											<a href="Toyota-Yaris-2012.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Fiat-500.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Fiat 500/main.png" alt="Fiat-500">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Fiat 500</h4>
+											<div class="product-card__price text-12">от 25 &#8364; / сутки</div>
+											<a href="Fiat-500.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Toyota-prius-2010.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Toyota-Prius/main.png" alt="Toyota-prius-2010">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Toyota Prius 2010</h4>
+											<div class="product-card__price text-12">от 25 &#8364; / сутки</div>
+											<a href="Toyota-prius-2010.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Skoda-Octavia.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Skoda-Octavia2.0/main.png" alt="Skoda-Octavia">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Skoda Octavia</h4>
+											<div class="product-card__price text-12">от 35 &#8364; / сутки</div>
+											<a href="Skoda-Octavia.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<!-- Люкс -->
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="Mercedes-A-class.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/Mercedes A class Diesel/main.png" alt="Mercedes-A-class">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Mercedes A-class</h4>
+											<div class="product-card__price text-12">от 42 &#8364; / сутки</div>
+											<a href="Mercedes-A-classe.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Peugeot-508-2019.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Peugeot-508-2019/main.png" alt="Peugeot-508-2019">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Peugeot 508 2019 </h4>
+											<div class="product-card__price text-12">от 48 &#8364; / сутки</div>
+											<a href="Peugeot-508-2019.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="VW-T-Cross.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/fake/VW T-Cross 1.0i/main.png" alt="VW-T-Cross">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">VW-T-Cross</h4>
+											<div class="product-card__price text-12">от 48 &#8364; / сутки</div>
+											<a href="VW-T-Cross.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<!-- 7 мест -->
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="VW-Touran-2011.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/VW-Touran/main.png" alt="VW-Touran-2011">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">VW Touran 2011</h4>
+											<div class="product-card__price text-12">от 33 &#8364; / сутки</div>
+											<a href="VW-Touran-2011.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<!-- Кабриолет -->
+							<div class="tabs-main-catalog__body">
+								<div class="tabs-main-catalog__products">
+									<article class="product-card">
+										<a href="VW-Eos-2007.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/VW-Eos-2007/main.png" alt="VW-Eos-2007">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">VW Eos 2007</h4>
+											<div class="product-card__price text-12">от 32 &#8364; / сутки</div>
+											<a href="VW-Eos-2007.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+									<article class="product-card">
+										<a href="Mini-cooper-S-2007.html" class="product-card__image-ibg_contain">
+											<img src="@img/catalog/Mini-Cooper/main.png" alt="Mini-cooper-S-2007">
+										</a>
+										<div class="product-card__content">
+											<h4 class="product-card__title title-h5">Mini Cooper S 2007</h4>
+											<div class="product-card__price text-12">от 32 &#8364; / сутки</div>
+											<a href="Mini-cooper-S-2007.html"
+												class="product-card__button button button_product">Просмотреть</a>
+										</div>
+									</article>
+								</div>
+							</div>
+							<!-- Автобус -->
 							<div class="tabs-main-catalog__body">
 								<div class="tabs-main-catalog__products">
 								</div>
@@ -122,7 +360,6 @@
 						</div>
 					</div>
 				</div>
-
 			</section>
 			<section class="page__advantages advantages-block">
 				<div class="advantages-block__container">
@@ -145,21 +382,6 @@
 											в оговоренное время, удобное для Вас</p>
 									</div>
 							</article>
-							<!-- <article data-watch class="advantages-block__item item-advantages _animated">
-								<div class="item-advantages__icon _icon-choice">
-									<h4 class="item-advantages__title title-h4">Вибір</h4>
-									<div class="item-advantages__text text-12">
-										<p>Вас ожидает широкий выбор авто, для лубой цели. Наши менеджеры помогут Вам с
-											выбором</p>
-									</div>
-							</article>
-							<article data-watch class="advantages-block__item item-advantages _animated">
-								<div class="item-advantages__icon _icon-save">
-									<h4 class="item-advantages__title title-h4">Безпека</h4>
-									<div class="item-advantages__text text-12">
-										<p>В прокате только безопасные авто, с полным комплектом </p>
-									</div>
-							</article> -->
 							<article data-watch class="advantages-block__item item-advantages _animated">
 								<div class="item-advantages__icon _icon-support">
 									<h4 class="item-advantages__title title-h4">Поддержка</h4>
@@ -188,7 +410,7 @@
 							<div class="conditions-block__items">
 								<article data-watch class="conditions-block__item item-conditions _animated">
 									<div class="item-conditions__image-ibg_contain">
-										<img src="@img/conditions/auto-2.png" alt="авто">
+										<img src="@img/conditions/auto-2.png" alt="Иконка авто">
 									</div>
 									<h4 class="item-conditions__title title-h4">Выберите авто</h4>
 									<div class="item-conditions__text text-12">
@@ -198,7 +420,7 @@
 								</article>
 								<article data-watch class="conditions-block__item item-conditions _animated">
 									<div class="item-conditions__image-ibg_contain">
-										<img src="@img/conditions/calendar.png" alt="">
+										<img src="@img/conditions/calendar.png" alt="Иконка календарь">
 									</div>
 									<h4 class="item-conditions__title title-h4">Выберите дату</h4>
 									<div class="item-conditions__text text-12">
@@ -208,7 +430,7 @@
 								</article>
 								<article data-watch class="conditions-block__item item-conditions _animated">
 									<div class="item-conditions__image-ibg_contain">
-										<img src="@img/conditions/passport.png" alt="">
+										<img src="@img/conditions/passport.png" alt="Иконка паспорт">
 									</div>
 									<h4 class="item-conditions__title title-h4">Документы</h4>
 									<div class="item-conditions__text text-12">
@@ -218,7 +440,7 @@
 								</article>
 								<article data-watch class="conditions-block__item item-conditions _animated">
 									<div class="item-conditions__image-ibg_contain">
-										<img src="@img/conditions/keys.png" alt="">
+										<img src="@img/conditions/keys.png" alt="Иконка детское кресло">
 									</div>
 									<h4 class="item-conditions__title title-h4">Получите ключи</h4>
 									<div class="item-conditions__text text-12">
@@ -226,9 +448,9 @@
 									</div>
 								</article>
 							</div>
-							<a href="#" class="conditions-block__button button _icon-arrow-right">
-								<span>Подробнее</span>
-							</a>
+							<button data-popup="#popup" class="conditions-block__button button _icon-arrow-right">
+								<span>Оформить заказ</span>
+							</button>
 						</div>
 
 					</div>
@@ -242,7 +464,7 @@
 							<div class="reviews-block__slide slide-reviews swiper-slide">
 								<div class="slide-reviews__wraper">
 									<div class="slide-reviews__image">
-										<img src="@img/callback/1.png" alt="">
+										<img src="@img/reviews/1.png" alt="testimonial man">
 									</div>
 									<div class="slide-reviews__text text-12">
 										Я арендовал автомобиль в Аликанте, и это было прекрасное и беззаботное
@@ -256,7 +478,7 @@
 							<div class="reviews-block__slide slide-reviews swiper-slide">
 								<div class="slide-reviews__wraper">
 									<div class="slide-reviews__image">
-										<img src="@img/callback/2.png" alt="">
+										<img src="@img/reviews/2.png" alt="testimonial oldman">
 									</div>
 									<div class="slide-reviews__text text-12">
 										Я очень доволен своим опытом аренды автомобиля в Аликанте. Процесс бронирования
@@ -269,7 +491,7 @@
 							<div class="reviews-block__slide slide-reviews swiper-slide">
 								<div class="slide-reviews__wraper">
 									<div class="slide-reviews__image">
-										<img src="@img/callback/1.png" alt="">
+										<img src="@img/reviews/3.png" alt="testimonial boy">
 									</div>
 									<div class="slide-reviews__text text-12">
 										Опыт аренды автомобиля в Аликанте был великолепным. Процесс получения и возврата
@@ -302,24 +524,24 @@
 								referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 							<div class="contacts-block__content">
-								<h4 class="contacts-block__subtitle title-h4">Юридический адресс</h4>
-								<div class="contacts-block__text text">«Nova-hub», Calle Van Dyck, 14, 03009 Alicante
+								<h4 class="contacts-block__subtitle title-h4">Адрес:</h4>
+								<div class="contacts-block__text">Calle van dyck 14 Alicante, Spain
 								</div>
 								<h4 class="contacts-block__subtitle title-h4">Телефон:</h4>
-								<div class="contacts-block__text text"><a href="tel:+34665705656">+34-665-70-56-56
+								<div class="contacts-block__text"><a href="tel:+34665705656">+34-665-70-56-56
 									</a></div>
 								<h4 class="contacts-block__subtitle title-h4">E-mail:</h4>
-								<div class="contacts-block__text text"><a href="E-mail">info@irvasokna.ru</a></div>
-								<h4 class="contacts-block__subtitle title-h4">Соціальі мережі</h4>
-								<div class="contacts-block__text contacts-block__text_social text">
-									<a href="#"><span class="_icon-instagram"></span></a>
-									<a href="#"><span class="_icon-facebook"></span></a>
-									<a href="#"><span class="_icon-whatsapp"></span></a>
+								<div class="contacts-block__text"><a href="E-mail">Novehub.es@gmail.com</a></div>
+								<h4 class="contacts-block__subtitle title-h4">Социальные сети:</h4>
+								<div class="contacts-block__text contacts-block__text_social">
+									<a href="https://www.instagram.com/nove_hub/"><span class="_icon-instagram"></span></a>
+									<a href="https://www.facebook.com/novehub.es"><span class="_icon-facebook"></span></a>
+									<a href="https://wa.me/34665705656"><span class="_icon-whatsapp"></span></a>
 									<a href="#"><span class="_icon-telegram"></span></a>
 									<a href="#"><span class="_icon-tiktok"></span></a>
 								</div>
-								<h4 class="contacts-block__subtitle title-h4">Графік роботи</h4>
-								<div class="contacts-block__text text">9:00 - 18:00 без выходных</div>
+								<h4 class="contacts-block__subtitle title-h4">График роботы</h4>
+								<div class="contacts-block__text">9:00 - 18:00 без выходных</div>
 							</div>
 						</div>
 					</div>
@@ -328,6 +550,9 @@
 			</section>
 		</main>
 		@@include('html/_footer.htm',{})
+		@@include('html/_popup.htm',{})
+		@@include('html/_popupSend.htm',{})
+
 	</div>
 	@@include('html/_js.htm',{})
 </body>

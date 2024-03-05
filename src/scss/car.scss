@@ -1,339 +1,317 @@
 .car-page {
+	// .car-page__top-block
+	&__top-block {
+		backdrop-filter: blur(0.9375rem);
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 
+	// .car-page__middle-block
+	&__middle-block {
+		backdrop-filter: blur(0.9375rem);
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 
-    // .car-page__top-block
-    &__top-block {
-        backdrop-filter: blur(0.9375rem);
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    // .car-page__middle-block
-    &__middle-block {
-        backdrop-filter: blur(0.9375rem);
-        background-color: rgba(0, 0, 0, 0.5);
-
-    }
-
-    // .car-page__bot-block
-    &__bot-block {
-        backdrop-filter: blur(0.9375rem);
-        background-color: rgba(0, 0, 0, 0.5);
-        padding-bottom: rem(15);
-    }
+	// .car-page__bot-block
+	&__bot-block {
+		backdrop-filter: blur(0.9375rem);
+		background-color: rgba(0, 0, 0, 0.5);
+		padding-bottom: rem(15);
+	}
 }
 
 .top-block {
+	// .top-block__container
+	&__container {
+	}
 
-    // .top-block__container
-    &__container {}
+	// .top-block__body
+	&__body {
+		padding-top: rem(100);
 
-    // .top-block__body
-    &__body {
-        padding-top: rem(100);
+		@media (max-width: $tablet) {
+			padding-top: rem(70);
+		}
 
-        @media (max-width:$tablet) {
-            padding-top: rem(70);
+		display: flex;
 
-        }
+		@media (max-width: $tablet) {
+			flex-direction: column;
+		}
+	}
 
-        display: flex;
+	// .top-block__image
+	&__image {
+		flex: 1 1 40%;
+		position: relative;
+		padding-bottom: rem(300);
 
-        @media (max-width:$tablet) {
-            flex-direction: column;
-        }
-    }
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: contain;
+		}
+	}
 
-    // .top-block__image
-    &__image {
-        flex: 1 1 40%;
-        position: relative;
-        padding-bottom: rem(300);
+	// .top-block__wraper
+	&__wraper {
+		flex: 1 1 60%;
 
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: contain;
-        }
-    }
+		display: flex;
+		gap: rem(10);
 
-    // .top-block__wraper
-    &__wraper {
-        flex: 1 1 60%;
+		@media (max-width: $tablet) {
+			flex-direction: column;
+		}
+	}
 
-        display: flex;
-        gap: rem(10);
+	// .top-block__specifications
+	&__specifications {
+		flex: 1 1 40%;
+	}
 
-        @media (max-width:$tablet) {
-            flex-direction: column;
-        }
+	// .top-block__prices
+	&__prices {
+		flex: 1 1 60%;
+	}
 
-    }
-
-
-    // .top-block__specifications
-    &__specifications {
-        flex: 1 1 40%;
-
-    }
-
-    // .top-block__prices
-    &__prices {
-        flex: 1 1 60%;
-
-    }
-
-
-
-    // .top-block__gallery
-    &__gallery {}
-
-
+	// .top-block__gallery
+	&__gallery {
+	}
 }
 
 .car-gallery {
+	// .car-gallery__slider
+	&__slider {
+	}
 
-    // .car-gallery__slider
-    &__slider {}
+	// .car-gallery__wrapper
+	&__wrapper {
+		position: relative;
+	}
 
-    // .car-gallery__wrapper
-    &__wrapper {
-        position: relative;
-    }
+	// .car-gallery__slide
+	&__slide {
+		position: relative;
+		padding-bottom: 20%;
 
-    // .car-gallery__slide
-    &__slide {
-        position: relative;
-        padding-bottom: 20%;
-
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: contain;
-        }
-    }
-
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: contain;
+		}
+	}
 }
 
 .specifications {
-    flex: 1 1 40%;
+	flex: 1 1 40%;
 
-    // .specifications__spollers
-    &__spollers {}
+	// .specifications__spollers
+	&__spollers {
+	}
 
-    // .specifications__top
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: rem(7);
-        flex-wrap: wrap;
+	// .specifications__top
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: rem(7);
+		flex-wrap: wrap;
 
-        @media (max-width:$tablet) {
-            justify-content: space-around;
-        }
-    }
+		@media (max-width: $tablet) {
+			justify-content: space-around;
+		}
+	}
 
-    // .specifications__icon
-    &__icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: rem(20);
-        gap: rem(7);
+	// .specifications__icon
+	&__icon {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: rem(20);
+		gap: rem(7);
 
-        span {
-            font-size: rem(14);
-        }
-    }
+		span {
+			font-size: rem(14);
+		}
+	}
 
-    // .specifications__bot
-    &__bot {
-        margin-top: rem(10);
-    }
+	// .specifications__bot
+	&__bot {
+		margin-top: rem(10);
+	}
 
-    // .specifications__text
-    &__text {
-        display: flex;
-        justify-content: space-between;
+	// .specifications__text
+	&__text {
+		display: flex;
+		justify-content: space-between;
 
-        &:not(:last-child) {
-            margin-bottom: rem(7);
-
-        }
-    }
+		&:not(:last-child) {
+			margin-bottom: rem(7);
+		}
+	}
 }
 
 .spollers {
+	// .spollers__item
+	&__item {
+	}
 
-    // .spollers__item
-    &__item {}
+	// .spollers__title
+	&__title {
+		border-radius: rem(15);
+	}
 
-    // .spollers__title
-    &__title {
-        border-radius: rem(15)
-    }
-
-    // .spollers__body
-    &__body {
-        border: 2px solid rgba(255, 255, 255, 0.5);
-        border-radius: rem(15)
-    }
+	// .spollers__body
+	&__body {
+		border: 2px solid rgba(255, 255, 255, 0.5);
+		border-radius: rem(15);
+	}
 }
 
 .prices {
+	display: flex;
+	flex-direction: column;
+	gap: rem(5);
 
-    display: flex;
-    flex-direction: column;
-    gap: rem(5);
+	// .prices__date
+	&__date {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
 
-    // .prices__date
-    &__date {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+		li {
+			margin: 0;
+			border: 2px solid rgba(255, 255, 255, 0.5);
+			border-radius: rem(15);
+			padding: rem(10) rem(15);
 
-        li {
-            margin: 0;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            border-radius: rem(15);
-            padding: rem(10) rem(15);
+			@media (max-width: $mobileSmall) {
+				padding: rem(5) rem(10);
+			}
+		}
+	}
 
-            @media (max-width:$mobileSmall) {
-                padding: rem(5) rem(10);
+	// .prices__price
+	&__price {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: rem(32);
 
-            }
-        }
+		li {
+			border: 2px solid rgba(255, 255, 255, 0.5);
+			border-radius: rem(15);
+			padding: rem(10) rem(15);
+			font-size: rem(32);
 
-    }
+			&:not(:last-child) {
+				margin: 0;
+			}
 
-    // .prices__price
-    &__price {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: rem(32);
+			@media (max-width: $mobileSmall) {
+				padding: rem(5) rem(10);
+			}
+		}
+	}
 
-        li {
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            border-radius: rem(15);
-            padding: rem(10) rem(15);
-            font-size: rem(32);
+	// .prices__deposit
+	&__deposit {
+		margin-top: rem(15);
+	}
 
-            &:not(:last-child) {
-                margin: 0;
-            }
-
-            @media (max-width:$mobileSmall) {
-                padding: rem(5) rem(10);
-
-            }
-        }
-    }
-
-    // .prices__deposit
-    &__deposit {
-        margin-top: rem(15);
-    }
-
-    // .prices__button
-    &__button {
-        display: block;
-        margin: rem(15) auto;
-
-    }
+	// .prices__button
+	&__button {
+		display: block;
+		margin: rem(15) auto;
+		cursor: pointer;
+	}
 }
 
 //========================================================================================================================================================
 
 .middle-block {
+	// .middle-block__title
+	&__title {
+		padding-top: rem(20);
+	}
 
-    // .middle-block__title
-    &__title {
-        padding-top: rem(20);
-    }
+	// .middle-block__text
+	&__text {
+		line-height: math.div(20, 16);
 
-    // .middle-block__text
-    &__text {
-        line-height: math.div(20, 16);
+		li {
+			font-size: rem(14);
+			line-height: rem(20);
+			padding-left: rem(15);
+			position: relative;
 
-        li {
-            font-size: rem(14);
-            line-height: rem(20);
-            padding-left: rem(15);
-            position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 10px;
+				height: 10px;
+				background-color: $mainColor;
+				/* Цвет круга */
+				border-radius: 50%;
+				transform: translateY(50%);
+			}
+		}
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 10px;
-                height: 10px;
-                background-color: $mainColor;
-                /* Цвет круга */
-                border-radius: 50%;
-                transform: translateY(50%);
-            }
-
-
-        }
-
-        p {
-            font-weight: 700;
-        }
-    }
+		p {
+			font-weight: 700;
+		}
+	}
 }
 
 //========================================================================================================================================================
 
-
 .bot-block {
+	// .bot-block__title
+	&__title {
+		padding-top: rem(20);
+	}
 
-    // .bot-block__title
-    &__title {
-        padding-top: rem(20);
-    }
-
-    // .bot-block__faq
-    &__faq {}
+	// .bot-block__faq
+	&__faq {
+	}
 }
 
 .faq {
+	// .faq__spollers
+	&__spollers {
+		gap: rem(7);
+	}
 
-    // .faq__spollers
-    &__spollers {
-        gap: rem(7);
-    }
+	// .faq__spollers-item
+	&__spollers-item {
+	}
 
-    // .faq__spollers-item
-    &__spollers-item {}
+	// .faq__spollers-title
+	&__spollers-title {
+		padding: rem(5) rem(40) rem(5) rem(10);
 
-    // .faq__spollers-title
-    &__spollers-title {
-        padding: rem(5) rem(40) rem(5) rem(10);
+		@media (max-width: $mobile) {
+			font-size: rem(14);
+		}
+	}
 
-        @media (max-width:$mobile) {
-            font-size: rem(14);
-        }
-    }
+	// .faq__spollers-body
+	&__spollers-body {
+		padding: rem(5) rem(10);
 
-    // .faq__spollers-body
-    &__spollers-body {
-        padding: rem(5) rem(10);
+		border: none;
 
-        border: none;
-
-        @media (max-width:$mobile) {
-            font-size: rem(14);
-        }
-
-    }
-
+		@media (max-width: $mobile) {
+			font-size: rem(14);
+		}
+	}
 }

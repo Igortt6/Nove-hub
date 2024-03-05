@@ -1,171 +1,179 @@
 // Заголовки, загальні БЕМ блоки та інше...
 .button {
-    display: inline-block;
-    padding: rem(20);
-    border-radius: rem(50);
-    text-transform: uppercase;
-    transition: background-color 0.5s ease;
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
-    // text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
-    background-image: linear-gradient(180deg, rgba(82, 108, 245, 1), rgba(109, 133, 255, 1) 0%, rgba(42, 73, 231, 1) 45%, rgba(79, 106, 244, 1));
-    transition: transform 0.3s ease 0s;
+	display: inline-block;
+	padding: rem(20);
+	border-radius: rem(50);
+	text-transform: uppercase;
+	transition: background-color 0.5s ease;
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+	// text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+	background-image: linear-gradient(
+		180deg,
+		rgba(82, 108, 245, 1),
+		rgba(109, 133, 255, 1) 0%,
+		rgba(42, 73, 231, 1) 45%,
+		rgba(79, 106, 244, 1)
+	);
+	transition: transform 0.3s ease 0s;
 
-    &_product {
-        background-image: none;
-        border-radius: rem(15);
-        border: 1px solid rgba(82, 108, 245, 1);
-        border-radius: rem(20);
-        background-color: rgba(0, 0, 0, 0.3);
-        font-size: rem(10);
-        letter-spacing: em(2, 10);
-    }
+	// .button_tabs
+	&_tabs {
+		@media (max-width: $mobile) {
+			padding: rem(10);
+		}
+	}
+	&_product {
+		background-image: none;
+		border-radius: rem(15);
+		border: 1px solid rgba(82, 108, 245, 1);
+		border-radius: rem(20);
+		background-color: rgba(0, 0, 0, 0.3);
+		font-size: rem(10);
+		letter-spacing: em(2, 10);
+	}
 
-    &-center {
-        display: block;
-    }
+	&-center {
+		display: block;
+	}
 
-    span {}
-
-    &:hover {
-        transform: scale(1.04);
-    }
-
+	&:hover {
+		transform: scale(1.04);
+	}
 }
 
 //========================================================================================================================================================
 .product-card {
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: rem(20);
+	background-color: rgba(0, 0, 0, 0.3);
 
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: rem(20);
-    background-color: rgba(0, 0, 0, 0.3);
+	@media (max-width: $mobileSmall) {
+		// display: flex;
+		padding: rem(0) rem(5) rem(5) rem(5);
+	}
 
-    @media (max-width:$mobileSmall) {
-        display: flex;
-        padding: rem(0) rem(5) rem(5) rem(5);
+	// .product-card__image
+	&__image-ibg_contain {
+		flex: 1 0 50%;
+		display: block;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+		padding-bottom: rem(250);
+		@include adaptiveValue('padding-bottom', 350, 200);
 
-    }
+		// @media (max-width:$mobileSmall) {
+		//     padding-bottom: rem(200);
 
+		// }
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+			border-bottom: none;
+			padding-bottom: rem(150);
+		}
+	}
 
-    // .product-card__image
-    &__image-ibg_contain {
-        flex: 1 0 50%;
-        display: block;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-        padding-bottom: rem(250);
-        @include adaptiveValue("padding-bottom", 350, 200);
+	// .product-card__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 
-        // @media (max-width:$mobileSmall) {
-        //     padding-bottom: rem(200);
+		@media (min-width: $mobileSmall) {
+			padding-bottom: rem(15);
+			flex: 1 1 auto;
+		}
+	}
 
-        // }
-        @media (max-width:$mobileSmall) {
-            width: 100%;
-            border-bottom: none;
-            padding-bottom: rem(150);
+	// .product-card__title
+	&__title {
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: math.div(42, 22);
+		text-align: center;
 
-        }
+		&:not(:last-child) {
+			margin-bottom: rem(5);
+		}
 
-    }
+		@media (max-width: $mobileSmall) {
+			text-align: center;
+			font-size: rem(18);
+			line-height: math.div(22, 18);
+		}
+	}
 
-    // .product-card__content
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+	// .product-card__price
+	&__price {
+		font-size: rem(12);
 
-        @media (min-width:$mobileSmall) {
-            padding-bottom: rem(15);
-            flex: 1 1 auto;
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
 
-        }
-    }
-
-    // .product-card__title
-    &__title {
-        font-size: rem(22);
-        font-weight: 700;
-        line-height: math.div(42, 22);
-        text-align: center;
-
-
-        &:not(:last-child) {
-            margin-bottom: rem(5);
-        }
-
-        @media (max-width:$mobileSmall) {
-            text-align: center;
-            font-size: rem(18);
-            line-height: math.div(22, 18);
-
-
-        }
-    }
-
-    // .product-card__price
-    &__price {
-        font-size: rem(12);
-
-        &:not(:last-child) {
-            margin-bottom: rem(10);
-        }
-    }
-
-    // .product-card__button
-    &__button {
-        @media (max-width:$mobileSmall) {
-            padding: rem(10);
-
-        }
-    }
-
-
+	// .product-card__button
+	&__button {
+		@media (max-width: $mobileSmall) {
+			padding: rem(7);
+		}
+	}
 }
 
 //========================================================================================================================================================
 
 .title-h2 {
-    font-weight: 700;
-    line-height: 1.04;
-    text-align: center;
-    @include adaptiveValue("font-size", 46, 22);
-
+	font-weight: 700;
+	line-height: 1.04;
+	text-align: center;
+	@include adaptiveValue('font-size', 46, 22);
 }
 
 .title-h4 {
-    font-size: 1.375rem;
-    font-weight: 700;
-    line-height: 1.2727272727;
-    text-align: center;
-
+	font-size: rem(22);
+	font-weight: 700;
+	line-height: 1.2727272727;
+	text-align: center;
 }
 
 .title-h4:not(:last-child) {
-    margin-bottom: 0.3125rem;
+	margin-bottom: 0.3125rem;
+}
+.title-h5 {
+	font-size: rem(22);
+	font-weight: 500;
+	line-height: 1.2727272727;
+	text-align: center;
+	@media (max-width: $mobile) {
+		font-size: rem(16);
+	}
+}
+
+.title-h5:not(:last-child) {
+	margin-bottom: 0.3125rem;
 }
 
 ._m0 {
-    margin-top: rem(0);
+	margin-top: rem(0);
 }
 
 .text-12 {
-    font-size: 0.75rem;
-    line-height: 1.1666666667;
-    text-align: center;
-    margin-bottom: 0.625rem;
+	font-size: 0.75rem;
+	line-height: 1.1666666667;
+	text-align: center;
+	margin-bottom: 0.625rem;
 }
 
 //========================================================================================================================================================
 
 ._animated {
-    opacity: 0;
-    transition: opacity 1s ease 0s;
+	opacity: 0;
+	transition: opacity 1s ease 0s;
 }
 
 ._animated {
-    &._watcher-view {
-        opacity: 1;
-        transition: opacity 1.7s ease 0s;
-    }
+	&._watcher-view {
+		opacity: 1;
+		transition: opacity 1.7s ease 0s;
+	}
 }

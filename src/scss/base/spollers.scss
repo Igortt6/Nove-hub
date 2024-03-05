@@ -24,14 +24,15 @@
 	position: relative;
 	list-style: none;
 
-	&::marker {}
+	&::marker {
+	}
 
 	._spoller-init & {
 		cursor: pointer;
 
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			right: 10px;
 			top: 50%;
@@ -102,5 +103,5 @@
 	border-radius: rem(15);
 	font-size: rem(16);
 	margin-top: rem(5);
-
+	will-change: transform;
 }

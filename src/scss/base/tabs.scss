@@ -1,26 +1,29 @@
 .tabs-main-catalog {
-
 	// .tabs__navigation
 	&__navigation {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		@include adaptiveValue("gap", 50, 20);
+		gap: rem(40);
 		padding-bottom: rem(30);
 		flex-wrap: wrap;
+		@media (max-width: $mobile) {
+			gap: rem(10);
+		}
 	}
 
 	// .tabs__title
 	&__title {
-
 		&._tab-active {
 			border: 2px solid rgba(255, 255, 255, 0.5);
 		}
 	}
 
 	// .tabs__content
-	&__content {}
+	&__content {
+	}
 
 	// .tabs__body
-	&__body {}
+	&__body {
+	}
 }
