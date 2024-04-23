@@ -3,6 +3,16 @@
 	@@include('html/_head.htm',{ "title":"CarPage" })
 
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-WXXMT7VZ"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page car-page">
@@ -10,7 +20,7 @@
 					<div class="top-block__container">
 						<div class="top-block__body">
 							<div class="top-block__image">
-								<img src="@img/catalog/VW-Touran/main.png" alt="" />
+								<img src="@img/catalog/VW-Touran/main.png" alt="VW-Touran" />
 							</div>
 							<div class="top-block__wraper">
 								<div class="top-block__specifications specifications">
@@ -333,6 +343,6 @@
 			@@include('html/_popup.htm',{}) @@include('html/_footer.htm',{})
 			@@include('html/_popupSend.htm',{})
 		</div>
-		@@include('html/_js.htm',{})
+		@@include('html/_preloader.htm',{}) @@include('html/_js.htm',{})
 	</body>
 </html>

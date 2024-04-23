@@ -511,28 +511,6 @@
 		font-weight: 500;
 		padding-bottom: rem(20);
 		position: relative;
-		a {
-			&:hover {
-				&::after {
-					transform-origin: left;
-					transform: scale(1);
-				}
-			}
-
-			&::after {
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: -6px;
-				width: 100%;
-				height: 3px;
-				background: #fff;
-				border-radius: 5px;
-				transform-origin: right;
-				transform: scalex(0);
-				transition: transform 0.5s;
-			}
-		}
 
 		// .contacts-block__text_social
 		&_social {

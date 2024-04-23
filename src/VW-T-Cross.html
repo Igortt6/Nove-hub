@@ -4,6 +4,16 @@
 	})
 
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-WXXMT7VZ"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page car-page">
@@ -11,7 +21,10 @@
 					<div class="top-block__container">
 						<div class="top-block__body">
 							<div class="top-block__image">
-								<img src="@img/catalog/fake/VW T-Cross 1.0i/main.png" alt="" />
+								<img
+									src="@img/catalog/fake/VW T-Cross 1.0i/main.png"
+									alt="VW T-Cross 1.0i"
+								/>
 							</div>
 							<div class="top-block__wraper">
 								<div class="top-block__specifications specifications">
@@ -162,7 +175,7 @@
 							</ul>
 						</div>
 						<h4 class="middle-block__title title-h4">
-							Оформить прокат VW T-Cross на выгодных условиях:
+							Оформить прокат VW T-Cross 2017 на выгодных условиях:
 						</h4>
 						<div class="middle-block__text">
 							Аренда VW T-Cross - это возможность насладиться удобством и
@@ -339,6 +352,6 @@
 			@@include('html/_popup.htm',{}) @@include('html/_footer.htm',{})
 			@@include('html/_popupSend.htm',{})
 		</div>
-		@@include('html/_js.htm',{})
+		@@include('html/_preloader.htm',{}) @@include('html/_js.htm',{})
 	</body>
 </html>
